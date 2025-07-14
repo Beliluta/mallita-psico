@@ -10,6 +10,7 @@ const ramos = [
   { nombre: "Fundamentos filosóficos de la psicología", id: "fund_filo" },
   { nombre: "Taller de comunicación", id: "taller_comunicacion" },
 
+  
   // Primer Año - II Semestre
   { nombre: "Ética", id: "etica", requisitos: ["antropologia"], abre: ["electivo1"] },
   { nombre: "Neuropsicología", id: "neuropsicologia", requisitos: ["fund_bio"], abre: ["eval_cognitiva"] },
@@ -18,6 +19,7 @@ const ramos = [
   { nombre: "Introducción a la metodología de la investigación", id: "intro_metodologia", abre: ["metodologia_aplicada"] },
   { nombre: "Taller de trabajo grupal", id: "taller_grupal" },
 
+  
   // Segundo Año - III Semestre
   { nombre: "Electivo de formación integral I", id: "electivo1", requisitos: ["etica"] },
   { nombre: "Psicología evolutiva I", id: "psic_evolutiva1", requisitos: ["proc_cognitivos", "proc_afectivos"], abre: ["psic_evolutiva2"] },
@@ -26,6 +28,7 @@ const ramos = [
   { nombre: "Metodología aplicada a la psicología", id: "metodologia_aplicada", requisitos: ["intro_metodologia"], abre: ["datos_cuant", "datos_cual", "proyectos"] },
   { nombre: "Taller de entrevista", id: "taller_entrevista" },
 
+  
   // Segundo Año - IV Semestre
   { nombre: "Electivo de formación integral II", id: "electivo2" },
   { nombre: "Psicopatología general", id: "psicopatologia", requisitos: ["psic_personalidad"], abre: ["psicopat_inf", "psicopat_adulto"] },
@@ -34,6 +37,7 @@ const ramos = [
   { nombre: "Análisis de datos cuantitativos", id: "datos_cuant", requisitos: ["metodologia_aplicada"], abre: ["proyecto_inv"] },
   { nombre: "Evaluación psicológica cognitiva", id: "eval_cognitiva", requisitos: ["neuropsicologia", "psic_personalidad"], abre: ["eval_personalidad"] },
 
+  
   // Tercer Año - V Semestre
   { nombre: "Electivo de formación integral III", id: "electivo3" },
   { nombre: "Psicopatología y psiquiatría infantil", id: "psicopat_inf", requisitos: ["psicopatologia"] },
@@ -42,6 +46,7 @@ const ramos = [
   { nombre: "Evaluación psicológica de la personalidad", id: "eval_personalidad", requisitos: ["eval_cognitiva"], abre: ["eval_integrada", "taller_persona"] },
   { nombre: "Políticas públicas", id: "politicas" },
 
+  
   // Tercer Año - VI Semestre
   { nombre: "Electivo de formación integral IV", id: "electivo4" },
   { nombre: "Psicopatología y psiquiatría adulto", id: "psicopat_adulto", requisitos: ["psicopatologia"] },
@@ -50,6 +55,7 @@ const ramos = [
   { nombre: "Formulación y evaluación de proyectos sociales", id: "proyectos", requisitos: ["metodologia_aplicada"] },
   { nombre: "Taller persona del psicólogo", id: "taller_persona", requisitos: ["eval_personalidad"] },
 
+  
   // Cuarto Año - VII Semestre
   { nombre: "Introducción a la psicoterapia sistémica", id: "psico_sistemica", requisitos: ["teorias1"] },
   { nombre: "Introducción a la psicoterapia psicoanalítica", id: "psico_psicoanalitica", requisitos: ["teorias1"] },
@@ -58,6 +64,7 @@ const ramos = [
   { nombre: "Problemas psicosociales actuales", id: "problemas_psicosociales", requisitos: ["psic_social2", "teorias1", "teorias2"], abre: ["psicologia_comunitaria"] },
   { nombre: "Integración en psicología", id: "integracion", requisitos: ["teorias1", "teorias2"] },
 
+  
   // Cuarto Año - VIII Semestre
   { nombre: "Introducción a la psicoterapia cognitiva", id: "psico_cognitiva", requisitos: ["teorias2"] },
   { nombre: "Introducción a la psicoterapia humanista", id: "psico_humanista", requisitos: ["teorias2"] },
@@ -66,12 +73,14 @@ const ramos = [
   { nombre: "Psicología comunitaria", id: "psicologia_comunitaria", requisitos: ["problemas_psicosociales", "teorias1", "teorias2"] },
   { nombre: "Electivo de especialización I", id: "especializacion1" },
 
+  
   // Quinto Año - IX Semestre
   { nombre: "Electivo diseño e intervención", id: "intervencion" },
   { nombre: "Electivo diseño en contextos", id: "contextos" },
   { nombre: "Electivo de especialización II", id: "especializacion2" },
   { nombre: "Proyecto de investigación", id: "proyecto_inv", requisitos: ["datos_cuant"] },
 
+  
   // Quinto Año - X Semestre
   { nombre: "Práctica profesional", id: "practica", requisitos: [
     "estrategias", "antropologia", "fund_bio", "proc_cognitivos", "evo_historia", "fund_filo", "taller_comunicacion",
